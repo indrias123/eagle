@@ -1,0 +1,153 @@
+body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background: darkgray;
+}
+.navbar {
+padding-left: 10px;
+overflow: hidden;
+background: orangered;
+flex: auto;
+} 
+.logo-img {
+    display: inline-flex;
+    width: 90px;
+    height: 70px;
+    margin-top: -12px;
+    margin-bottom: -20px;
+    margin-left: -24px;
+}
+.navbar a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.35s ease-in-out;
+    margin-top: 20px;
+}
+.navbar a.le{
+    float: left;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.5s ease-in-out;
+    margin-top: 8px;
+    margin-bottom: -10;
+}
+.navbar a.ri {
+float: right;
+border-bottom: 1px solid rgb(23, 248, 23);
+border-radius: 20px;
+padding: 14px 16px;
+}
+.menu {
+    float: right;
+    overflow: hidden;
+}
+.menubtn {
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+}
+.icon {
+    display: none;
+}
+.menu-list {
+    display: none;
+    position: absolute;
+    background: rgb(156, 149, 149);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px orange;
+    z-index: 1;
+}
+.menu-list a{
+    float: none;
+    color: blue;
+    padding: 12px 16px;
+    margin-left: 10px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    background-color: darkgray;
+}
+.navbar a:hover, .menubtn:hover, .menu-list:hover {
+    border-bottom: 1px solid rgb(23, 248, 23);
+    border-radius: 20px;
+    color: rgb(22, 228, 228);
+}
+.menu:hover .menu-list {
+    display: block;
+}
+
+* {box-sizing: border-box;}
+body {font-family: Arial;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: rgb(16, 243, 16);
+  font-size: 17px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: rgb(199, 120, 18);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active {
+  background-color: #717171;
+}
+/* Fading animation */
+.fade {
+  position: relative;
+  animation-name: fade;
+  animation-duration: 5s;
+}
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
+/* Clear floats after the columns */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
